@@ -977,9 +977,9 @@ export default function Page() {
 
 
 							<Typography sx={{ mt: 5 }} variant='body2' color='text.secondary' align='center'>
-								© Martin Pham - {' '}
-								<Link color='inherit' href='https://mph.am/'>
-									mph.am
+								© Buns Enchantress - {' '}
+								<Link color='inherit' href='https://0xBuns.xyz/'>
+									0xBuns.xyz
 								</Link>
 							</Typography>
 						</Box>
