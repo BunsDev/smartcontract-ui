@@ -1010,8 +1010,6 @@ export default function Page() {
 					})
 				}}
 			/>
-
-
 		</>
 	)
 }
