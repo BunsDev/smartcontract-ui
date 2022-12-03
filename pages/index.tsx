@@ -22,6 +22,8 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { useSnackbar } from 'notistack'
 import AccountTreeIcon from '@mui/icons-material/AccountTree'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import { SourceBrowser } from 'components/SourceBrowser'
 import { ContractSelector } from 'components/ContractSelector'
 import { FunctionComposer } from 'components/FunctionComposer'
@@ -827,7 +829,8 @@ export default function Page() {
 					md={6}
 					lg={7}
 					sx={{
-						backgroundImage: 'url(https://source.unsplash.com/featured/?crypto)',
+						// backgroundImage: 'url(https://source.unsplash.com/featured/?crypto)',
+						backgroundImage: 'url(https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y3J5cHRvfHx8fHx8MTY3MDAzODc3OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)',
 						backgroundRepeat: 'no-repeat',
 						backgroundColor: (t) =>
 							t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -855,9 +858,9 @@ export default function Page() {
 								<AccountTreeIcon />
 							</Avatar>
 						</Link>
-						<Typography component='h1' variant='h5'>
+						{/* <Typography component='h1' variant='h5'>
 							Smart Contract UI
-						</Typography>
+						</Typography> */}
 						<Box component='div' sx={{
 							mt: 1,
 							width: '100%'
@@ -974,12 +977,19 @@ export default function Page() {
 									}}>Reload</Button>
 								</Box>
 							</>}
-
-
-							<Typography sx={{ mt: 5 }} variant='body2' color='text.secondary' align='center'>
-								© Buns Enchantress - {' '}
-								<Link color='inherit' href='https://0xBuns.xyz/'>
-									0xBuns.xyz
+							<Typography sx={{ mt: 3 }} variant='body1' color='text.secondary' align='center'>
+								Buns Enchantress
+								<br />
+								<Link color='inherit' href='https://github.com/BunsDev' target="_blank">
+									<GitHubIcon />
+								</Link>
+								{'     | '}
+								<Link color='inherit' href='https://learn-solidity.com' target="_blank">
+									Learn Solidity
+								</Link>
+								{' |     '}
+								<Link color='inherit' href='https://twitter.com/0xBuns' target="_blank">
+									<TwitterIcon />
 								</Link>
 							</Typography>
 						</Box>
@@ -1000,8 +1010,6 @@ export default function Page() {
 					})
 				}}
 			/>
-
-
 		</>
 	)
 }
