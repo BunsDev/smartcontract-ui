@@ -7,16 +7,17 @@ interface NumberFormatComponentProps {
 	onChange: (event: { target: { name: string; value: string } }) => void;
 	name: string;
 }
-
+// @ts-ignore
 const NumberFormatComponent = forwardRef<NumberFormat, NumberFormatComponentProps>(
 	function NumberFormatCustom(props, ref) {
 		const { onChange, ...other } = props
-
+		
 		return (
+			// @ts-ignore
 			<NumberFormat
 				{...other}
 				getInputRef={ref}
-				onValueChange={(values) => {
+				onValueChange={(values: { value: any; }) => {
 					onChange({
 						target: {
 							name: props.name,
