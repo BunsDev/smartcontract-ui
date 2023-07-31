@@ -10,6 +10,7 @@
     "prod": "next start",
     "push": "yarn build && (git add -A ; git commit -m $MSG ; git push -f origin main)"
   },
+  "nodeVersion": "18",
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
@@ -39,7 +40,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-number-format": "^5.2.2",
-    "react-qr-reader": "^3.0.0",
+    "react-qr-reader": "^3.0.0-beta-1",
     "react-syntax-highlighter": "^15.5.0",
     "use-immer": "^0.9.0"
   },
