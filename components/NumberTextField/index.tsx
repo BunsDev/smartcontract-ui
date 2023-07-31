@@ -7,7 +7,8 @@ interface NumberFormatComponentProps {
 	onChange: (event: { target: { name: string; value: string } }) => void;
 	name: string;
 }
-const NumberFormatComponent = forwardRef<NumberFormat, NumberFormatComponentProps>(
+
+const NumberFormatComponent = forwardRef<NumberFormat<any>, NumberFormatComponentProps>(
 	function NumberFormatCustom(props, ref) {
 		const { onChange, ...other } = props
 		
