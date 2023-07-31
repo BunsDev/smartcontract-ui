@@ -1,7 +1,7 @@
 const fs = require('fs')
 const chains = require(__dirname + '/../config/chains-dev.json')
 
-const { INFURA_API_KEY, ETHERSCAN_API_KEY, BSCSCAN_API_KEY, FTMSCAN_API_KEY, POLYGON_API_KEY } = require(__dirname + '/../config/keys.json')
+const { INFURA_API_KEY, ETHERSCAN_API_KEY, BSCSCAN_API_KEY, FTMSCAN_API_KEY, SNOWTRACE_API_KEY, POLYGON_API_KEY } = require(__dirname + '/../config/keys.json')
 
 const chainsAbiApi = {
 	1: `result https://api.etherscan.io/api?module=contract&action=getabi&address={ADDRESS}&apikey=${ETHERSCAN_API_KEY}`,
@@ -20,7 +20,7 @@ const chainsAbiApi = {
 	321: `data.0.contract_abi https://explorer.kcc.io/v2api/contract/getabi?address={ADDRESS}`,
 	4002: `result https://api-testnet.ftmscan.com/api?module=contract&action=getabi&address={ADDRESS}&apikey=${ETHERSCAN_API_KEY}`,
 	43113: `result https://api-testnet.snowtrace.io/api?module=contract&action=getabi&address={ADDRESS}&apikey=${ETHERSCAN_API_KEY}`,
-	43114: `result https://api.snowtrace.io/api?module=contract&action=getabi&address={ADDRESS}&apikey=${ETHERSCAN_API_KEY}`,
+	43114: `result https://api.snowtrace.io/api?module=contract&action=getabi&address={ADDRESS}&apikey=${SNOWTRACE_API_KEY}`,
 	80001: `result https://api-mumbai.polygonscan.com/api?module=contract&action=getabi&address={ADDRESS}&apikey=${ETHERSCAN_API_KEY}`,
 }
 

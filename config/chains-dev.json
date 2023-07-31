@@ -64,6 +64,7 @@
 		"chain": "AVAX",
 		"network": "mainnet",
 		"rpc": [
+			"https://rpc.ankr.com/avalanche",
 			"https://api.avax.network/ext/bc/C/rpc"
 		],
 		"faucets": [
