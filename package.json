@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "predev": "node scripts/buildChainList",
-    "dev": "(local-ssl-proxy --source 3443 --target 3000) & next",
+    "dev": "next start",
+    "dev2": "(local-ssl-proxy --source 3443 --target 3000) & next",
     "prebuild": "node scripts/buildChainList",
     "build": "next build && next export",
     "prod": "next start",
@@ -39,7 +40,7 @@
     "notistack": "^2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-number-format": "^5.2.2",
+    "react-number-format": "^4.8.0",
     "react-qr-reader": "^3.0.0-beta-1",
     "react-syntax-highlighter": "^15.5.0",
     "use-immer": "^0.9.0"
